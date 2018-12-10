@@ -37,7 +37,7 @@ public class AppConfig {
         // Создание свойств для настройки Hibernate
         Properties jpaProperties = new Properties();
         // Указание диалекта конкретной базы данных – необходимо для генерации запросов Hibernate к БД
-        jpaProperties.put("hibernate.dialect", "org.hibernate.dialect.PostgreSQLDialect");
+        jpaProperties.put("hibernate.dialect", "org.hibernate.dialect.SQLDialect");
         // Указание максимальной глубины связи (будет рассмотрено в следующем уроке)
         jpaProperties.put("hibernate.max_fetch_depth", 3);
         // Определение максимального количества строк, возвращаемых за один запрос из БД
